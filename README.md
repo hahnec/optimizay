@@ -12,11 +12,11 @@ The content list is given below and subject to further expansion:
 
 2. [Bivariate Gradient Descent vs. Newton-Raphson](02_bivar_newton_vs_descent.ipynb)
 
-    <img src="./img/bivar_min.png" width="150px">
+    <img src="./img/bivar_min.png" width="250px">
 
 3. [Bivariate Newton Root-finding](03_bivar_newton_root.ipynb)
 
-    <img src="./img/polynom_intersect.png" width="150px">
+    <img src="./img/polynom_intersect.png" width="250px">
 
 4. [Multivariate Newton Root-finding](04_multivar_newton_root.ipynb)
     
