@@ -26,6 +26,10 @@ The content list is given below and subject to further expansion:
 
     <img src="./img/lm-fit_anim.gif" width="350px">
 
+6. [Stochastic Gradient Descent (SGD)](06_stochastic_gradient.ipynb)
+
+    <img src="./img/sgd_anim.gif" width="350px">
+
 Credits
 =======
 
