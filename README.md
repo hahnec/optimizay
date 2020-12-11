@@ -12,19 +12,19 @@ The content list is given below and subject to further expansion:
 
 2. [Bivariate Gradient Descent vs. Newton-Raphson](02_bivar_newton_vs_descent.ipynb)
 
-    <img src="./img/bivar_min.png" width="250px">
+    <img src="./img/bivar_min.png" width="350px">
 
 3. [Bivariate Newton Root-finding](03_bivar_newton_root.ipynb)
 
-    <img src="./img/polynom_intersect.png" width="250px">
+    <img src="./img/polynom_intersect.png" width="350px">
 
 4. [Multivariate Newton Root-finding](04_multivar_newton_root.ipynb)
     
-    <img src="./img/ellipsoid_anim.gif" width="150px">
+    <img src="./img/ellipsoid_anim.gif" width="350px">
 
 5. [Gauss-Newton vs. Levenberg-Marquardt (from numerical Jacobian)](05_gna_vs_lma.ipynb)
 
-    <img src="./img/lm-fit_anim.gif" width="150px">
+    <img src="./img/lm-fit_anim.gif" width="350px">
 
 Credits
 =======
