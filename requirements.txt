@@ -1,0 +1,6 @@
+numpy
+matplotlib
+sklearn
+torch
+nbconvert
+nbformat
