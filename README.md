@@ -8,7 +8,7 @@ The content list is given below and subject to further expansion:
 
 1. [Univarite Newton-Raphson Minimization](01_univar_newton.ipynb)
 
-    <img src="./img/univar_min.png" width="150px">
+    <img src="./img/univar_loss_plot.png" width="300px">
 
 2. [Bivariate Gradient Descent vs. Newton-Raphson](02_bivar_newton_vs_descent.ipynb)
 
