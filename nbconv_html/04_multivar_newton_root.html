@@ -14291,10 +14291,10 @@ $$<p>where $\mathbf{p}_i=\left(x_i, y_i, z_i\right)^\intercal$ and $\mathbf{r}=\
 <p>In the more general case, an ellipsoidal surface $Q(\cdot)$ with space coordinates $\mathbf{\hat{p}}$ may be at any location $\mathbf{c}=(x_c, y_c, z_c)^\intercal$ with an arbitrary orientation $\mathbf{R}$ so that</p>
 $$
 \mathbf{\hat{p}}_i=\mathbf{R}\mathbf{p}_i+\mathbf{c}
-$$<p>which is inverted by</p>
+$$<p>which is re-arranged to</p>
 $$
 \mathbf{p}_i = \mathbf{R}^{-1}\left(\mathbf{\hat{p}}_i-\mathbf{c}\right)
-$$<p>The three-dimensional rotation matrix $\mathbf{R} \in \mathbb{R}^{3 \times 3}$ reads</p>
+$$<p>with the inverse $\mathbf{R}^{-1}$ of a three-dimensional rotation matrix $\mathbf{R} \in \mathbb{R}^{3 \times 3}$ reads</p>
 $$
 \mathbf{R} = 
 \begin{bmatrix}
@@ -14328,14 +14328,14 @@ $$
 (\hat{x}_i-y_c) c_{21} + (\hat{y}_i-y_c) c_{22} + (\hat{z}_i-y_c) c_{23} \\
 (\hat{x}_i-z_c) c_{31} + (\hat{y}_i-z_c) c_{32} + (\hat{z}_i-z_c) c_{33} \\
 \end{bmatrix}
-$$<p>which is fed into $Q(\cdot)$ giving the surface function</p>
+$$<p>This is fed into the surface function $Q(\cdot)$ giving</p>
 <p>$
 Q\left(\mathbf{\hat{p}}_i, \mathbf{r}, \mathbf{R}^{-1}, \mathbf{c}\right) = 
 \left(\frac{(\hat{x}_i-x_c) c_{11} + (\hat{y}_i-x_c) c_{12} + (\hat{z}_i-x_c) c_{13}}{r_1}\right)^2 + 
 \left(\frac{(\hat{x}_i-y_c) c_{21} + (\hat{y}_i-y_c) c_{22} + (\hat{z}_i-y_c) c_{23}}{r_2}\right)^2 + 
 \left(\frac{(\hat{x}_i-z_c) c_{31} + (\hat{y}_i-z_c) c_{32} + (\hat{z}_i-z_c) c_{33}}{r_3}\right)^2 - 1
 $</p>
-<p>which we aim to minimize hereafter for three or as many ellipsoid bodies as possible.</p>
+<p>which we use for each ellipsoid body placed relative to the origin.</p>
 <h2 id="Partial-derivatives-of-ellipsoid-surface">Partial derivatives of ellipsoid surface<a class="anchor-link" href="#Partial-derivatives-of-ellipsoid-surface">&#182;</a></h2><p>To solve for intersections of ellipsoids, we seek the partial derivatives of the surface function $Q(\cdot)$ using the <a href="https://en.wikipedia.org/wiki/Chain_rule">chain rule</a> which results in</p>
 <p>$
 \partial_\hat{x}Q\left(\mathbf{\hat{p}}_i, \mathbf{r}, \mathbf{R}^{-1}, \mathbf{c}\right) = 
@@ -14741,9 +14741,9 @@ Solution is valid
 
 
 
-<div id="f47d26f1-d81e-4ffb-912f-857cb681eeb2" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="30183779-bef5-4c5e-9abd-f54faf91c537" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('f47d26f1-d81e-4ffb-912f-857cb681eeb2');
+var element = document.getElementById('30183779-bef5-4c5e-9abd-f54faf91c537');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
