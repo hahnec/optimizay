@@ -29,6 +29,10 @@ The content list is given below and subject to further expansion:
 6. [Stochastic Gradient Descent (SGD)](06_stochastic_gradient.ipynb)
 
     <img src="./img/sgd_anim.gif" width="350px">
+   
+7. [Feature Engineering - Titanic](07_feat_eng_titanic.ipynb)
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/1912_Titanic_Departure_Colorized.jpg" width="350px">
 
 Credits
 =======
