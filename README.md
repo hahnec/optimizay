@@ -8,31 +8,31 @@ The content list is given below and subject to further expansion:
 
 1. [Univarite Newton-Raphson Minimization](01_univar_newton.ipynb)
 
-    <img src="./img/univar_loss_plot.png" width="300px">
+    <a href="01_univar_newton.ipynb"><img src="./img/univar_loss_plot.png" width="300px"></a>
 
 2. [Bivariate Gradient Descent vs. Newton-Raphson](02_bivar_newton_vs_descent.ipynb)
 
-    <img src="./img/bivar_min.png" width="350px">
+    <a href="02_bivar_newton_vs_descent.ipynb"><img src="./img/bivar_min.png" width="350px"></a>
 
 3. [Bivariate Newton Root-finding](03_bivar_newton_root.ipynb)
 
-    <img src="./img/polynom_intersect.png" width="350px">
+    <a href="03_bivar_newton_root.ipynb"><img src="./img/polynom_intersect.png" width="350px"></a>
 
 4. [Multivariate Newton Root-finding](04_multivar_newton_root.ipynb)
     
-    <img src="./img/ellipsoid_anim.gif" width="350px">
+    <a href="04_multivar_newton_root.ipynb"><img src="./img/ellipsoid_anim.gif" width="350px"></a>
 
-5. [Gauss-Newton vs. Levenberg-Marquardt (from numerical Jacobian)](05_gna_vs_lma.ipynb)
+5. [Gauss-Newton vs. Levenberg-Marquardt](05_gna_vs_lma.ipynb)
 
-    <img src="./img/lm-fit_anim.gif" width="350px">
+    <a href="05_gna_vs_lma.ipynb"><img src="./img/lm-fit_anim.gif" width="350px"></a>
 
 6. [Stochastic Gradient Descent (SGD)](06_stochastic_gradient.ipynb)
 
-    <img src="./img/sgd_anim.gif" width="350px">
+    <a href="06_stochastic_gradient.ipynb"><img src="./img/sgd_anim.gif" width="350px"></a>
    
 7. [Feature Engineering - Titanic](07_feat_eng_titanic.ipynb)
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/1912_Titanic_Departure_Colorized.jpg" width="350px">
+    <a href="07_feat_eng_titanic.ipynb"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/1912_Titanic_Departure_Colorized.jpg" width="350px"></a>
 
 Credits
 =======
