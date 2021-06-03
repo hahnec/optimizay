@@ -14347,7 +14347,7 @@ $$
 F(\mathbf{w})=\frac{1}{2N}\sum_{i=1}^N f\left(\mathbf{X}_i, \mathbf{w}, \mathbf{y}_i\right)=\frac{1}{2N}\sum_{i=1}^N\left(\mathbf{\hat{y}}_i-\mathbf{y}_i\right)^2=\frac{1}{2N}\sum_{i=1}^N\left(\mathbf{X}_i\mathbf{w}-\mathbf{y}_i\right)^2
 $$<p>In the field of machine learning, the term <strong>training</strong> refers to an SGD optimization problem where weight parameters $\mathbf{w}$ are adjusted so that</p>
 $$
-\mathop{arg\,min}_{\mathbf{w}} \, F(\mathbf{w})
+\text{arg min}_{\mathbf{w}} \, F(\mathbf{w})
 $$<p>To achieve this minimization, SGD inherits the <strong>Gradient Descent</strong> update method at iteration $k$ which is known as <strong>back-propagation</strong> and writes</p>
 $$
 \mathbf{w}_{k+1} = \mathbf{w}_k - \gamma \nabla F(\mathbf{w}_k)
