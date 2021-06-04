@@ -14345,10 +14345,10 @@ a.anchor-link {
 <h3 id="Optimization">Optimization<a class="anchor-link" href="#Optimization">&#182;</a></h3><p>For a stochastic regression, a predicted value $\hat{y}$ is a scalar composed by $\hat{y}:=\mathbf{\hat{y}}_i=\mathbf{X}_i\mathbf{w}$ where a column vector $\mathbf{w}=\left[w^{(1)}, w^{(2)}, \dots, w^{(J)}\right]^\intercal$ consists of weights $w^{(j)}$ for each feature $j$ and the row vector $\mathbf{X}_i=\left[x_i^{(1)}, x_i^{(2)}, \dots, x_i^{(J)}\right]$ represents a data sample with $J$ features while $i$ is the sample index from a set with total number of $N$ samples. Note that we add a feature column of ones $\mathbf{x}^{(1)}=[1, 1, \dots, 1]^\intercal$ to the data set to embed and train the bias as variable $w^{(1)}$ instead of treating it as a separate variable. Our predicted class value $\hat{y}$ is supposed to match its actual class $y$ for which a least-squares cost metric $(\hat{y}-y)^2$ may be a reasonable choice. Similar to conventional optimization, SGD aims to minimize an objective function $F(\mathbf{w})$, which in case of SGD may be defined as</p>
 $$
 F(\mathbf{w})=\frac{1}{2N}\sum_{i=1}^N f\left(\mathbf{X}_i, \mathbf{w}, \mathbf{y}_i\right)=\frac{1}{2N}\sum_{i=1}^N\left(\mathbf{\hat{y}}_i-\mathbf{y}_i\right)^2=\frac{1}{2N}\sum_{i=1}^N\left(\mathbf{X}_i\mathbf{w}-\mathbf{y}_i\right)^2
-$$<p>In the field of machine learning, the term <strong>training</strong> refers to an SGD optimization problem where weight parameters $\mathbf{w}$ are adjusted so that</p>
+$$<p>In the field of machine learning, the term <strong>training</strong> refers to an optimization problem where weight parameters $\mathbf{w}$ are adjusted so that</p>
 $$
 \text{arg min}_{\mathbf{w}} \, F(\mathbf{w})
-$$<p>To achieve this minimization, SGD inherits the <strong>Gradient Descent</strong> update method at iteration $k$ which is known as <strong>back-propagation</strong> and writes</p>
+$$<p>To achieve this, SGD inherits the <strong>Gradient Descent</strong> update method at iteration $k$ which is known as <strong>back-propagation</strong> and writes</p>
 $$
 \mathbf{w}_{k+1} = \mathbf{w}_k - \gamma \nabla F(\mathbf{w}_k)
 $$<p>where $\gamma$ denotes the learning rate and $\nabla F(\mathbf{w}_k)$ is the gradient of the objective function. Here, the gradient $\nabla F(\mathbf{w})$ can be generally obtained by</p>
@@ -14368,11 +14368,10 @@ $$
 \vdots \\
 2\mathbf{X}_i^{(J)} \left(\mathbf{X}_i\mathbf{w}-\mathbf{y}_i\right) \\
 \end{bmatrix}
-\, , \quad \forall i \in \{1, \dots, N\}
 $$<p>and written in compact vector notation</p>
 $$
-\nabla F(\mathbf{w}) = \mathbf{X}_i^\intercal\left(\mathbf{X}_i\mathbf{w}-\mathbf{y}_i\right), \quad \forall i \in \{1, \dots, N\}
-$$<p>after canceling out factor $2$ from the normalization term in the objective function. Iteration through the entire data set from $i$ to $N$ is referred to as one <em>epoch</em>. The resulting weights $\mathbf{w}$ have shown to be improved by letting the optimization procedure see the training data several times. This means that SGD sweeps through the entire dataset more than a single epoch.</p>
+\nabla F(\mathbf{w}) = \mathbf{X}_i^\intercal\left(\mathbf{X}_i\mathbf{w}-\mathbf{y}_i\right)
+$$<p>after canceling out factor $2$ from the normalization term in the objective function. Iteration through the entire data set $\forall i \in \{1, \dots, N\}$ is referred to as one <em>epoch</em>. The resulting weights $\mathbf{w}$ have shown to be improved by letting the optimization procedure see the training data several times. This means that SGD sweeps through the entire dataset more than a single epoch.</p>
 <h3 id="Mini-Batching">Mini-Batching<a class="anchor-link" href="#Mini-Batching">&#182;</a></h3><p>Completion of a single epoch is often sub-divided in bundled subsets of samples, so-called <em>batches</em>, of size $B$ where $B&lt;N$. While $B=1$ in classical SGD, mini-batching requires $B&gt;1$, which helps reduce the variance in each parameter update. The batch size is often chosen to be a power-of-two for better performance from available matrix multiplication libraries. In practice, we determine how many training examples will fit on the GPU or main memory and then use the nearest power-of-two as the batch size.</p>
 <h3 id="Activation-function">Activation function<a class="anchor-link" href="#Activation-function">&#182;</a></h3><p>In logistic regression, we desire a classification label $\mathring{y}$ that only has two possible values whereas, so far, our model employs linear combinations $\mathbf{\hat{y}}_i=\mathbf{X}_i\mathbf{w}$ that yield results in the $\mathbf{\hat{y}}_i \in (-\infty, \infty)$ range. Thus, we seek a continuous function that maps real numbers $\mathbf{\hat{y}} \in \mathbb{R}^N$ to the $(0,1)$ codomain. A function $\sigma(\cdot)$ which satisfies this condition is the <em>sigmoid function</em>, also known as <em>standard logistic function</em>, given by</p>
 $$
