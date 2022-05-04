@@ -1,0 +1,9 @@
+numpy
+matplotlib
+sklearn
+torch
+nbconvert
+nbformat
+seaborn
+name2nat
+ethnicolr
