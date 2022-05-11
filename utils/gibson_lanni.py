@@ -5,9 +5,6 @@ import numpy as np
 import scipy.special
 from scipy.interpolate import interp1d
 from matplotlib import animation
-plt.style.use('dark_background')
-plt.rcParams['figure.facecolor'] = '#272b30'
-plt.rcParams['image.cmap'] = 'viridis'
 
 plot_opt = False
 
